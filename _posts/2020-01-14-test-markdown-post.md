@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
-title: Tutorial on using fastpages: Markdown Blog Post
+title: Tutorial on using fastpages to blog in Markdown
 ---
 # Example Markdown Post
 
