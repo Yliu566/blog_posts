@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This page tells you what is a conda environment and how to build or remove specific conda environment." />
 <meta property="og:description" content="This page tells you what is a conda environment and how to build or remove specific conda environment." />
-<link rel="canonical" href="https://yliu566.github.io/blog_fastpages/ubuntu/2022/06/02/conda-env-setup.html" />
-<meta property="og:url" content="https://yliu566.github.io/blog_fastpages/ubuntu/2022/06/02/conda-env-setup.html" />
+<link rel="canonical" href="https://yliu566.github.io/blog_fastpages/cheatsheet/2022/06/02/conda-env-setup.html" />
+<meta property="og:url" content="https://yliu566.github.io/blog_fastpages/cheatsheet/2022/06/02/conda-env-setup.html" />
 <meta property="og:site_name" content="Yuru’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-06-02T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="use anaconda to setup an environment" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-02T00:00:00-05:00","datePublished":"2022-06-02T00:00:00-05:00","description":"This page tells you what is a conda environment and how to build or remove specific conda environment.","headline":"use anaconda to setup an environment","mainEntityOfPage":{"@type":"WebPage","@id":"https://yliu566.github.io/blog_fastpages/ubuntu/2022/06/02/conda-env-setup.html"},"url":"https://yliu566.github.io/blog_fastpages/ubuntu/2022/06/02/conda-env-setup.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-02T00:00:00-05:00","datePublished":"2022-06-02T00:00:00-05:00","description":"This page tells you what is a conda environment and how to build or remove specific conda environment.","headline":"use anaconda to setup an environment","mainEntityOfPage":{"@type":"WebPage","@id":"https://yliu566.github.io/blog_fastpages/cheatsheet/2022/06/02/conda-env-setup.html"},"url":"https://yliu566.github.io/blog_fastpages/cheatsheet/2022/06/02/conda-env-setup.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog_fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://yliu566.github.io/blog_fastpages/feed.xml" title="Yuru's blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog_fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -86,7 +86,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/blog_fastpages/categories/#ubuntu">ubuntu</a>
+        <a class="category-tags-link" href="/blog_fastpages/categories/#cheatsheet">cheatsheet</a>
         
       
       </p>
@@ -112,7 +112,9 @@ window.onload = wrap_img;
 </ul><h2 id="what-is-the-conda-environment">
 <a class="anchor" href="#what-is-the-conda-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is the conda environment?</h2>
 
-<p>conda environment is useful because you can build your own environment without conflict with other packages.</p>
+<p>conda environment is useful because you can build your own environment without meeting the situation some packages indepencies are conflict with those of another.</p>
+
+<p>First of all, you need to install Anaconda or Miniconda. please refer to <a href="https://conda.io/projects/conda/en/stable/user-guide/install/linux.html#install-linux-silent">this link</a>, download the installer and install Anaconda or Miniconda.</p>
 
 <h2 id="conda-commands">
 <a class="anchor" href="#conda-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>conda commands</h2>
@@ -155,6 +157,18 @@ window.onload = wrap_img;
 
 <blockquote>
   <p>conda list -n your_env_name</p>
+</blockquote>
+
+<p>To check one package (e.g. rdkit) in your conda list</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>conda list</td>
+        <td>grep rdkit</td>
+      </tr>
+    </tbody>
+  </table>
 </blockquote>
 
 <h3 id="export-environment-as-yml">
@@ -223,7 +237,7 @@ window.onload = wrap_img;
 <p>pip download sources are changed by looking at the file: ~/.pip/pip.conf
 <!-- pip修改镜像源（修改~/.pip/pip.conf配置文件） --></p>
 
-  </div><a class="u-url" href="/blog_fastpages/ubuntu/2022/06/02/conda-env-setup.html" hidden></a>
+  </div><a class="u-url" href="/blog_fastpages/cheatsheet/2022/06/02/conda-env-setup.html" hidden></a>
 </article>
 
       </div>
