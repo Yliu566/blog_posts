@@ -2,13 +2,15 @@
 toc: true
 layout: post
 description: This page tells you what is a conda environment and how to build or remove specific conda environment.
-categories: [ubuntu]
+categories: [cheatsheet]
 title: use anaconda to setup an environment
 ---
 
 ## What is the conda environment?
 
-conda environment is useful because you can build your own environment without conflict with other packages.
+conda environment is useful because you can build your own environment without meeting the situation some packages indepencies are conflict with those of another.
+
+First of all, you need to install Anaconda or Miniconda. please refer to [this link](https://conda.io/projects/conda/en/stable/user-guide/install/linux.html#install-linux-silent), download the installer and install Anaconda or Miniconda.
 
 
 ## conda commands
@@ -34,6 +36,9 @@ To check all available packages:
 > conda list
 
 > conda list -n your_env_name
+
+To check one package (e.g. rdkit) in your conda list 
+> conda list | grep rdkit
 
 ### export environment as yml
 <!-- 导出环境为yml -->
