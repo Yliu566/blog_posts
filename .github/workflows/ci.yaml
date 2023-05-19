@@ -7,13 +7,13 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  actions: write
-  pull-requests: write
-  contents: write
-  deployments: write
-  pages: write
-  statuses: write
+# permissions:
+#   actions: write
+#   pull-requests: write
+#   contents: write
+#   deployments: write
+#   pages: write
+#   statuses: write
 
 jobs:
   build-site:
