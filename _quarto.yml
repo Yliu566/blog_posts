@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Yuru's blog posts"
+  site-url: https://yliu566.github.io/blog_posts
+  description: "A great sample blog"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+
