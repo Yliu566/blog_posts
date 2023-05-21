@@ -10,6 +10,8 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/yliu566
+      - icon: linkedin
+        href: https://linkedin.com
 
 format:
   html:

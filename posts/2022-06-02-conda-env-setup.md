@@ -29,21 +29,26 @@ First of all, you need to install Anaconda or Miniconda. please refer to [this l
 
 ### conda enter into or leave a specific environment
 Enter:
+
 > conda activate your_env_name
 
 Exit:
+
 > source deactivate
 
 or
+
 > conda deactivate
 
 ### about packages in the environment
 To check all available packages:
+
 > conda list
 
 > conda list -n your_env_name
 
 To check one package (e.g. rdkit) in your conda list 
+
 > conda list | grep rdkit
 
 ### export environment as yml
@@ -58,6 +63,7 @@ create environment based on yml link:
 
 <!-- 对yml文件修改后更新环境 -->
 update conda environment after making edits on yml file:
+
 > conda env update -f environment.yml
 
 ### clone an environment
@@ -72,15 +78,18 @@ update conda environment after making edits on yml file:
 
 <!-- 删除虚拟环境中的包： -->
 conda remove a package from a environment
+
 > conda remove --name $your_env_name $package_name
 
 ### change download source of conda
 <!-- 更改镜像源 -->
 
 1. check download resources
+   
 > conda config --set show_channel_urls yes
 
 2. add download sources to conda config
+
 > conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 
 Also you will see the infomation in file ~/.condarc
