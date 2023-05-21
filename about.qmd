@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: avatar.png
 about:
   template: jolla
   links:
@@ -13,3 +13,7 @@ about:
 ---
 
 About this blog
+
+This site is previoius built with [fastpages](https://github.com/fastai/fastpages), now is built with [quarto](https://quarto.org/). 
+
+The first idea of this blog is to put everything I find interesting or useful about Cheminformatics and Machine Learning here. Sometimes the topic will beyond what I just mentioned. Anyway, it just served as a place of notes for my personal usage. Hopefully it turns out nice and clean.
