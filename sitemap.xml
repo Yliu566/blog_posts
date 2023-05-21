@@ -2,14 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yliu566.github.io/blog_posts/posts/welcome/index.html</loc>
-    <lastmod>2023-05-21T14:18:15.256Z</lastmod>
+    <lastmod>2023-05-21T15:53:10.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/posts/2022-06-01-git-cheatsheet.html</loc>
+    <lastmod>2023-05-21T15:53:10.990Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/posts/2022-06-02-conda-env-setup.html</loc>
+    <lastmod>2023-05-21T15:53:11.362Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/index.html</loc>
-    <lastmod>2023-05-21T14:18:15.680Z</lastmod>
+    <lastmod>2023-05-21T15:53:11.846Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/about.html</loc>
-    <lastmod>2023-05-21T14:18:15.980Z</lastmod>
+    <lastmod>2023-05-21T15:53:12.130Z</lastmod>
   </url>
 </urlset>

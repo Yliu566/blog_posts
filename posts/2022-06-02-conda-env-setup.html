@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yuru">
-<meta name="dcterms.date" content="2023-05-21">
+<meta name="dcterms.date" content="2022-06-02">
+<meta name="description" content="This page tells you what is a conda environment and how to build or remove specific conda environment.">
 
-<title>Yuru’s blog posts - Welcome To My Blog</title>
+<title>Yuru’s blog posts - Use anaconda to setup an environment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,17 +62,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Yuru’s blog posts</span>
     </a>
   </div>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -102,9 +102,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+      <h1 class="title">Use anaconda to setup an environment</h1>
+                  <div>
+        <div class="description">
+          This page tells you what is a conda environment and how to build or remove specific conda environment.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">cheatsheet</div>
               </div>
                   </div>
   </div>
@@ -112,17 +117,11 @@ ul.task-list li input[type="checkbox"] {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Yuru </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 21, 2023</p>
+        <p class="date">June 2, 2022</p>
       </div>
     </div>
     
@@ -133,19 +132,108 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-the-conda-environment" id="toc-what-is-the-conda-environment" class="nav-link active" data-scroll-target="#what-is-the-conda-environment">What is the conda environment?</a></li>
+  <li><a href="#conda-commands" id="toc-conda-commands" class="nav-link" data-scroll-target="#conda-commands">conda commands</a>
+  <ul class="collapse">
+  <li><a href="#check-conda-environment" id="toc-check-conda-environment" class="nav-link" data-scroll-target="#check-conda-environment">check conda environment</a></li>
+  <li><a href="#conda-build-a-new-environment" id="toc-conda-build-a-new-environment" class="nav-link" data-scroll-target="#conda-build-a-new-environment">conda build a new environment</a></li>
+  <li><a href="#conda-enter-into-or-leave-a-specific-environment" id="toc-conda-enter-into-or-leave-a-specific-environment" class="nav-link" data-scroll-target="#conda-enter-into-or-leave-a-specific-environment">conda enter into or leave a specific environment</a></li>
+  <li><a href="#about-packages-in-the-environment" id="toc-about-packages-in-the-environment" class="nav-link" data-scroll-target="#about-packages-in-the-environment">about packages in the environment</a></li>
+  <li><a href="#export-environment-as-yml" id="toc-export-environment-as-yml" class="nav-link" data-scroll-target="#export-environment-as-yml">export environment as yml</a></li>
+  <li><a href="#clone-an-environment" id="toc-clone-an-environment" class="nav-link" data-scroll-target="#clone-an-environment">clone an environment</a></li>
+  <li><a href="#conda-remove-a-specific-environment" id="toc-conda-remove-a-specific-environment" class="nav-link" data-scroll-target="#conda-remove-a-specific-environment">conda remove a specific environment</a></li>
+  <li><a href="#change-download-source-of-conda" id="toc-change-download-source-of-conda" class="nav-link" data-scroll-target="#change-download-source-of-conda">change download source of conda</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>This is my first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>I am now starting to migrate from fastpages to <a href="https://quarto.org/docs/websites/website-blog.html">quarto</a>. Let’s see how everything goes here.</p>
-<p>Looking forward to using Quarto.</p>
+<section id="what-is-the-conda-environment" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-conda-environment">What is the conda environment?</h2>
+<p>conda environment is useful because you can build your own environment without meeting the situation some packages indepencies are conflict with those of another.</p>
+<p>First of all, you need to install Anaconda or Miniconda. please refer to <a href="https://conda.io/projects/conda/en/stable/user-guide/install/linux.html#install-linux-silent">this link</a>, download the installer and install Anaconda or Miniconda.</p>
+</section>
+<section id="conda-commands" class="level2">
+<h2 class="anchored" data-anchor-id="conda-commands">conda commands</h2>
+<section id="check-conda-environment" class="level3">
+<h3 class="anchored" data-anchor-id="check-conda-environment">check conda environment</h3>
+<blockquote class="blockquote">
+<p>conda env list</p>
+</blockquote>
+</section>
+<section id="conda-build-a-new-environment" class="level3">
+<h3 class="anchored" data-anchor-id="conda-build-a-new-environment">conda build a new environment</h3>
+<blockquote class="blockquote">
+<p>conda create -c conda-forge your_env_name</p>
+</blockquote>
+</section>
+<section id="conda-enter-into-or-leave-a-specific-environment" class="level3">
+<h3 class="anchored" data-anchor-id="conda-enter-into-or-leave-a-specific-environment">conda enter into or leave a specific environment</h3>
+<p>Enter: &gt; conda activate your_env_name</p>
+<p>Exit: &gt; source deactivate</p>
+<p>or &gt; conda deactivate</p>
+</section>
+<section id="about-packages-in-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="about-packages-in-the-environment">about packages in the environment</h3>
+<p>To check all available packages: &gt; conda list</p>
+<blockquote class="blockquote">
+<p>conda list -n your_env_name</p>
+</blockquote>
+<p>To check one package (e.g.&nbsp;rdkit) in your conda list &gt; conda list | grep rdkit</p>
+</section>
+<section id="export-environment-as-yml" class="level3">
+<h3 class="anchored" data-anchor-id="export-environment-as-yml">export environment as yml</h3>
+<!-- 导出环境为yml -->
+<blockquote class="blockquote">
+<p>conda env export &gt; environment.yml</p>
+</blockquote>
+<!-- 根据yml创建环境 -->
+<p>create environment based on yml link:</p>
+<blockquote class="blockquote">
+<p>conda env create -f environment.yml</p>
+</blockquote>
+<!-- 对yml文件修改后更新环境 -->
+<p>update conda environment after making edits on yml file: &gt; conda env update -f environment.yml</p>
+</section>
+<section id="clone-an-environment" class="level3">
+<h3 class="anchored" data-anchor-id="clone-an-environment">clone an environment</h3>
+<!-- 复制环境 -->
+<blockquote class="blockquote">
+<p>conda create -n python36 –clone python36_new</p>
+</blockquote>
+</section>
+<section id="conda-remove-a-specific-environment" class="level3">
+<h3 class="anchored" data-anchor-id="conda-remove-a-specific-environment">conda remove a specific environment</h3>
+<!-- 删除环境： -->
+<blockquote class="blockquote">
+<p>conda remove -n your_env_name –all</p>
+</blockquote>
+<!-- 删除虚拟环境中的包： -->
+<p>conda remove a package from a environment &gt; conda remove –name $your_env_name $package_name</p>
+</section>
+<section id="change-download-source-of-conda" class="level3">
+<h3 class="anchored" data-anchor-id="change-download-source-of-conda">change download source of conda</h3>
+<!-- 更改镜像源 -->
+<ol type="1">
+<li><p>check download resources &gt; conda config –set show_channel_urls yes</p></li>
+<li><p>add download sources to conda config &gt; conda config –add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</p></li>
+</ol>
+<p>Also you will see the infomation in file ~/.condarc <!-- 修改后可以在~/.condarc配置文件中可以看到相应信息 --></p>
+<p>pip download sources are changed by looking at the file: ~/.pip/pip.conf <!-- pip修改镜像源（修改~/.pip/pip.conf配置文件） --></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

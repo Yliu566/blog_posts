@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-06-01">
+<meta name="description" content="Useful git commands">
+
+<title>Yuru’s blog posts - Git cheatsheet</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Yuru’s blog posts</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yliu566" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Git cheatsheet</h1>
+                  <div>
+        <div class="description">
+          Useful git commands
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">cheatsheet</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 1, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#git-commands" id="toc-git-commands" class="nav-link active" data-scroll-target="#git-commands">git commands</a>
+  <ul class="collapse">
+  <li><a href="#create-a-repository" id="toc-create-a-repository" class="nav-link" data-scroll-target="#create-a-repository">create a repository</a></li>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">configuration</a></li>
+  <li><a href="#addremove-file" id="toc-addremove-file" class="nav-link" data-scroll-target="#addremove-file">add/remove file</a></li>
+  <li><a href="#submit-code" id="toc-submit-code" class="nav-link" data-scroll-target="#submit-code">submit code</a></li>
+  <li><a href="#branch" id="toc-branch" class="nav-link" data-scroll-target="#branch">branch</a></li>
+  <li><a href="#tags" id="toc-tags" class="nav-link" data-scroll-target="#tags">tags</a></li>
+  <li><a href="#visualize-difference" id="toc-visualize-difference" class="nav-link" data-scroll-target="#visualize-difference">visualize difference</a></li>
+  <li><a href="#remote-sync" id="toc-remote-sync" class="nav-link" data-scroll-target="#remote-sync">remote sync</a></li>
+  <li><a href="#restoration" id="toc-restoration" class="nav-link" data-scroll-target="#restoration">restoration</a></li>
+  <li><a href="#others" id="toc-others" class="nav-link" data-scroll-target="#others">Others</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="git-commands" class="level1">
+<h1>git commands</h1>
+<p>Workspace <!-- 工作区 --> Index / Stage <!-- 暂存区 --> Repository <!-- 仓库区（或本地仓库） --> Remote <!-- 远程仓库 --></p>
+<section id="create-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-repository">create a repository</h2>
+<p>Create a git repository in current directory <!-- 在当前目录新建一个Git代码库 --> &gt; git init</p>
+<p>Create a directory and initialize it as a git repository <!-- 新建一个目录，将其初始化为Git代码库 --> &gt; git init [project-name]</p>
+<p>Download a git repository <!-- 下载一个项目和它的整个代码历史 --> &gt; git clone [url]</p>
+</section>
+<section id="configuration" class="level2">
+<h2 class="anchored" data-anchor-id="configuration">configuration</h2>
+<p>The configuation file of Git is stored as .gitconfig. This file exits in the /home/USER/ as a configuration for global use, and also exists in repository folder as a configuration for specific use. <!-- Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。 --></p>
+<p>Display current Git configuration settings &gt; git config –list</p>
+<p>Edit the configuration file &gt; git config -e [–global]</p>
+<p>Set up the user info &gt; git config [–global] user.name “[name]” &gt; git config [–global] user.email “[email address]”</p>
+</section>
+<section id="addremove-file" class="level2">
+<h2 class="anchored" data-anchor-id="addremove-file">add/remove file</h2>
+<p>Add specific file/files to stage areas &gt; git add [file1] [file2] …</p>
+<p>Add folder to stage areas &gt; git add [dir]</p>
+<p>Add all files in current folder to stage areas &gt; git add .</p>
+<p>If a file has multiple changes, it is okay to add every change individually &gt; git add -p</p>
+<p>Delete a file in the workspace and save this deletion to stage areas &gt; git rm [file1] [file2] …</p>
+<p>Stop track the changes of a file, this file will stay in workspace &gt; git rm –cached [file]</p>
+<p>Change file names, and save this rename action in stage areas &gt; git mv [file-original] [file-renamed]</p>
+</section>
+<section id="submit-code" class="level2">
+<h2 class="anchored" data-anchor-id="submit-code">submit code</h2>
+<p>Submit files in stage areas to repository &gt; git commit -m [message]</p>
+<p>Submit specific files from Stage to Repository &gt; git commit [file1] [file2] … -m [message]</p>
+<p>Directly submit all changes after previous submission from Workspace to Repository &gt; git commit -a</p>
+<p>Display the difference info when submitting the code &gt; git commit -v</p>
+<p>If you want to change the commit message, you can use this code: (use only when no modification after previous commit): &gt; git commit –amend -m [message]</p>
+<p>Re-commit last code, including the new changes of certain files. &gt; git commit –amend [file1] [file2]</p>
+</section>
+<section id="branch" class="level2">
+<h2 class="anchored" data-anchor-id="branch">branch</h2>
+<p>list all local branches &gt; git branch</p>
+<p>list all remote branches &gt; gti branch -r</p>
+<p>list all local and remote brances &gt; git branch -a</p>
+<p>Create a new branch (local) &gt; git branch [branch-name]</p>
+<p>Create a new branch (local), and switch to this branch &gt; git checkout -b [branch-name]</p>
+<p>Create a new branch and direct to certain commit &gt; git branch [branch-name] [commit]</p>
+<p>Create a new branch and add track with remote branch &gt; git branch –track <a href="#branch">branch</a> [remote-branch]</p>
+<p>Switch to specific branch and update workspace &gt; git checkout [branch-name]</p>
+<p>Switch to last branch &gt; git checkout -</p>
+<p>Build track connection between current branch and remote branch &gt; git branch –set-upstream <a href="#branch">branch</a> [remote-branch]</p>
+<p>Merge specific branch to current branch &gt; git merge <a href="#branch">branch</a></p>
+<p>Choose a commit and merge to current branch &gt; git cherry-pick [commit]</p>
+<p>Delete a branch &gt; git branch -d [branch-name]</p>
+<p>Delete a remote branch &gt; git push origin –delete [branch-name] &gt; git branch -dr [remote/branch]</p>
+</section>
+<section id="tags" class="level2">
+<h2 class="anchored" data-anchor-id="tags">tags</h2>
+<p>List all tags &gt; git tag</p>
+<p>Create a tage for current commit &gt; git tag [tag]</p>
+<p>Create a tag for specific commit &gt; git tag [tag] [commit]</p>
+<p>Delete local tag &gt; git tag -d [tag]</p>
+<p>Delete remote tag &gt; git push origin :refs/tags/[tagName]</p>
+<p>Show tag infos &gt; git show [tag]</p>
+<p>Submit a specfic tag &gt; git push [remote] [tag]</p>
+<p>Submit all tags &gt; git push [remote] –tags</p>
+<p>Create a branch and direct to a specific tag &gt; git checkout -b <a href="#branch">branch</a> [tag]</p>
+</section>
+<section id="visualize-difference" class="level2">
+<h2 class="anchored" data-anchor-id="visualize-difference">visualize difference</h2>
+<p>Display changed files &gt; git status</p>
+<p>Display the history version of current branch &gt; git log</p>
+<p>Display history of commits and changed files in every commit &gt; git log –stat</p>
+<p>Search commit history by keywords &gt; git log -S [keyword]</p>
+<p>Display all changes afer a commit, and format displays as one commit per row. &gt; git log [tag] HEAD –pretty=format:%s</p>
+<!-- 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件 -->
+<p>Display all changes of a specific commit, of whose commit message fits seach words. &gt; git log [tag] HEAD –grep feature</p>
+<p>Display the version history of a file. &gt; git log –follow [file] &gt; git whatchanged [file]</p>
+<p>Display all differences of a file in every commit. &gt; git log -p [file]</p>
+<p>Show last 5 commits info. &gt; git log -5 –pretty –oneline</p>
+<p>Show users who add commits, ordered in frequency. &gt; git shortlog -sn</p>
+<p>Show who and when changed a file. &gt; git blame [file]</p>
+<p>Show the difference between workspace and stage. &gt; git diff</p>
+<p>Show the difference between stage and last commit. &gt; git diff –cached [file]</p>
+<p>Show the diffrence between workspace and the newest commit in current branch &gt; git diff HEAD</p>
+<p>Show the difference between two commits &gt; git diff [first-branch]…[second-branch]</p>
+<p>Show how many codes do you write today. &gt; git diff –shortstat “@{0 day ago}”</p>
+<p>Show changes of a specific commit &gt; git show [commit]</p>
+<p>Show file changes of a specific commit &gt; git show –name-only [commit]</p>
+<p>git show filename of a commit &gt; git show [commit]:[filename]</p>
+<p>Show recent commits of current branch &gt; git reflog</p>
+</section>
+<section id="remote-sync" class="level2">
+<h2 class="anchored" data-anchor-id="remote-sync">remote sync</h2>
+<p>Download all changes from remote repository &gt; git fetch [remote]</p>
+<p>Display all remote repository &gt; git remote -v</p>
+<p>Display infomation of a remote repository &gt; git remote show [remote]</p>
+<p>Add a new remote repository and a name for the repository &gt; git remote add [shortname] [url]</p>
+<p>Pull the changes of the remote repository and merge it with local repository &gt; git pull [remote] <a href="#branch">branch</a></p>
+<p>Upload local branch of the repository to remote repository &gt; git push [remote] <a href="#branch">branch</a></p>
+<p>Force upload this current branch to remote repository ignoring conflicts. &gt; git push [remote] –force</p>
+<p>Push all branches to remote repository &gt; git push [remote] –all</p>
+</section>
+<section id="restoration" class="level2">
+<h2 class="anchored" data-anchor-id="restoration">restoration</h2>
+<p>Restore file from Stage area to Workspace &gt; git checkout [file]</p>
+<p>Restore a file in a commit from Stage area to workspace &gt; git checkout [commit] [file]</p>
+<p>Restore all files from Stage area to Workspace &gt; git checkout .</p>
+<p>Restore a file from Stage and keep the file the same as last commit, but file in Workspace is unchanged &gt; git reset [file]</p>
+<p>Reset Stage area and Workspace to keep the same as last commit. &gt; git reset –hard</p>
+<!-- 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变 -->
+<p>Reset a commit of current branch, also reset the Stage area but change nothing in Workspace &gt; git reset [commit]</p>
+<!-- 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致 -->
+<p>Reset the HEAD of current branch as a specific commit, also reset stage and workspace to keep the same as the commit. &gt; git reset –hard [commit]</p>
+<!-- 重置当前HEAD为指定commit，但保持暂存区和工作区不变 -->
+<p>Rest current HEAD as a specific commit, but keep no changes in stage and workspace. &gt; git reset –keep [commit]</p>
+<!-- 新建一个commit，用来撤销指定commit,后者的所有变化都将被前者抵消，并且应用到当前分支 -->
+<p>Create a new commit, which is used to restore another commit. The changes of the later commit will be restored by the former one and will be applied to current branch. &gt; git revert [commit]</p>
+<!-- 暂时将未提交的变化移除，稍后再移入 -->
+<p>Temporally remove current uncommited changes and add them later &gt; git stash &gt; git stash pop</p>
+</section>
+<section id="others" class="level2">
+<h2 class="anchored" data-anchor-id="others">Others</h2>
+<p>Create an archive file of a Git repository &gt; git archive</p>
+<p><the end=""></the></p>
+<!-- some of the code comes to this reference: [A blog post](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html) -->
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
