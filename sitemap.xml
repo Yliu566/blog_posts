@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://yliu566.github.io/blog_posts/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/cheatsheet/2022/06/01/git-cheatsheet.html</loc>
-<lastmod>2022-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/cheatsheet/2022/06/02/conda-env-setup.html</loc>
-<lastmod>2022-06-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/about/</loc>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/</loc>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/search/</loc>
-</url>
-<url>
-<loc>https://yliu566.github.io/blog_posts/categories/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/posts/welcome/index.html</loc>
+    <lastmod>2023-05-21T05:32:23.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/posts/post-with-code/index.html</loc>
+    <lastmod>2023-05-21T05:32:24.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/index.html</loc>
+    <lastmod>2023-05-21T05:32:24.526Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/about.html</loc>
+    <lastmod>2023-05-21T05:32:24.834Z</lastmod>
+  </url>
 </urlset>
