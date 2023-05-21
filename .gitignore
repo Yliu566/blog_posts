@@ -13,6 +13,5 @@ _notebooks/.ipynb_checkpoints
 .tweet-cache
 __pycache__
 /archive/
-/docs
 
 /.quarto/
