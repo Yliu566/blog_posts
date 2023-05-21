@@ -1,6 +1,6 @@
 ---
 title: "Welcome To My Blog"
-author: "Yuru Liu"
+author: "Yuru"
 date: "2023-05-21"
 categories: [news]
 ---
