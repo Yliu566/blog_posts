@@ -9,13 +9,13 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/yliu566
+
 format:
   html:
     theme: cosmo
     css: styles.css
 
-
+execute:
+  freeze: auto
 
