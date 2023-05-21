@@ -12,45 +12,25 @@
 <generator>quarto-1.3.353</generator>
 <lastBuildDate>Sat, 20 May 2023 16:00:00 GMT</lastBuildDate>
 <item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://yliu566.github.io/blog_posts/posts/post-with-code/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is a post with executable code.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://yliu566.github.io/blog_posts/posts/post-with-code/index.html</guid>
-  <pubDate>Sat, 20 May 2023 16:00:00 GMT</pubDate>
-  <media:content url="https://yliu566.github.io/blog_posts/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Welcome To My Blog</title>
-  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <dc:creator>Yuru Liu</dc:creator>
   <link>https://yliu566.github.io/blog_posts/posts/welcome/index.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
+<p>This is my first post in a Quarto blog. Welcome!</p>
 <p><img src="https://yliu566.github.io/blog_posts/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>I am now starting to migrate from fastpages to <a href="https://quarto.org/docs/websites/website-blog.html">quarto</a>. Let’s see how everything goes here.</p>
+<p>Looking forward to using Quarto.</p>
 
 
 
  ]]></description>
   <category>news</category>
   <guid>https://yliu566.github.io/blog_posts/posts/welcome/index.html</guid>
-  <pubDate>Wed, 17 May 2023 16:00:00 GMT</pubDate>
+  <pubDate>Sat, 20 May 2023 16:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
