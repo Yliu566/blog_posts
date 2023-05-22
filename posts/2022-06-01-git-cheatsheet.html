@@ -91,6 +91,11 @@ ul.task-list li input[type="checkbox"] {
 </i> 
  <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -164,121 +169,370 @@ ul.task-list li input[type="checkbox"] {
 <p>Workspace <!-- 工作区 --> Index / Stage <!-- 暂存区 --> Repository <!-- 仓库区（或本地仓库） --> Remote <!-- 远程仓库 --></p>
 <section id="create-a-repository" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-repository">create a repository</h2>
-<p>Create a git repository in current directory <!-- 在当前目录新建一个Git代码库 --> &gt; git init</p>
-<p>Create a directory and initialize it as a git repository <!-- 新建一个目录，将其初始化为Git代码库 --> &gt; git init [project-name]</p>
-<p>Download a git repository <!-- 下载一个项目和它的整个代码历史 --> &gt; git clone [url]</p>
+<p>Create a git repository in current directory <!-- 在当前目录新建一个Git代码库 --></p>
+<blockquote class="blockquote">
+<p>git init</p>
+</blockquote>
+<p>Create a directory and initialize it as a git repository <!-- 新建一个目录，将其初始化为Git代码库 --></p>
+<blockquote class="blockquote">
+<p>git init [project-name]</p>
+</blockquote>
+<p>Download a git repository <!-- 下载一个项目和它的整个代码历史 --></p>
+<blockquote class="blockquote">
+<p>git clone [url]</p>
+</blockquote>
 </section>
 <section id="configuration" class="level2">
 <h2 class="anchored" data-anchor-id="configuration">configuration</h2>
 <p>The configuation file of Git is stored as .gitconfig. This file exits in the /home/USER/ as a configuration for global use, and also exists in repository folder as a configuration for specific use. <!-- Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。 --></p>
-<p>Display current Git configuration settings &gt; git config –list</p>
-<p>Edit the configuration file &gt; git config -e [–global]</p>
-<p>Set up the user info &gt; git config [–global] user.name “[name]” &gt; git config [–global] user.email “[email address]”</p>
+<p>Display current Git configuration settings</p>
+<blockquote class="blockquote">
+<p>git config –list</p>
+</blockquote>
+<p>Edit the configuration file</p>
+<blockquote class="blockquote">
+<p>git config -e [–global]</p>
+</blockquote>
+<p>Set up the user info</p>
+<blockquote class="blockquote">
+<p>git config [–global] user.name “[name]”</p>
+<p>git config [–global] user.email “[email address]”</p>
+</blockquote>
 </section>
 <section id="addremove-file" class="level2">
 <h2 class="anchored" data-anchor-id="addremove-file">add/remove file</h2>
-<p>Add specific file/files to stage areas &gt; git add [file1] [file2] …</p>
-<p>Add folder to stage areas &gt; git add [dir]</p>
-<p>Add all files in current folder to stage areas &gt; git add .</p>
-<p>If a file has multiple changes, it is okay to add every change individually &gt; git add -p</p>
-<p>Delete a file in the workspace and save this deletion to stage areas &gt; git rm [file1] [file2] …</p>
-<p>Stop track the changes of a file, this file will stay in workspace &gt; git rm –cached [file]</p>
-<p>Change file names, and save this rename action in stage areas &gt; git mv [file-original] [file-renamed]</p>
+<p>Add specific file/files to stage areas</p>
+<blockquote class="blockquote">
+<p>git add [file1] [file2] …</p>
+</blockquote>
+<p>Add folder to stage areas</p>
+<blockquote class="blockquote">
+<p>git add [dir]</p>
+</blockquote>
+<p>Add all files in current folder to stage areas</p>
+<blockquote class="blockquote">
+<p>git add .</p>
+</blockquote>
+<p>If a file has multiple changes, it is okay to add every change individually</p>
+<blockquote class="blockquote">
+<p>git add -p</p>
+</blockquote>
+<p>Delete a file in the workspace and save this deletion to stage areas</p>
+<blockquote class="blockquote">
+<p>git rm [file1] [file2] …</p>
+</blockquote>
+<p>Stop track the changes of a file, this file will stay in workspace</p>
+<blockquote class="blockquote">
+<p>git rm –cached [file]</p>
+</blockquote>
+<p>Change file names, and save this rename action in stage areas</p>
+<blockquote class="blockquote">
+<p>git mv [file-original] [file-renamed]</p>
+</blockquote>
 </section>
 <section id="submit-code" class="level2">
 <h2 class="anchored" data-anchor-id="submit-code">submit code</h2>
-<p>Submit files in stage areas to repository &gt; git commit -m [message]</p>
-<p>Submit specific files from Stage to Repository &gt; git commit [file1] [file2] … -m [message]</p>
-<p>Directly submit all changes after previous submission from Workspace to Repository &gt; git commit -a</p>
-<p>Display the difference info when submitting the code &gt; git commit -v</p>
-<p>If you want to change the commit message, you can use this code: (use only when no modification after previous commit): &gt; git commit –amend -m [message]</p>
-<p>Re-commit last code, including the new changes of certain files. &gt; git commit –amend [file1] [file2]</p>
+<p>Submit files in stage areas to repository</p>
+<blockquote class="blockquote">
+<p>git commit -m [message]</p>
+</blockquote>
+<p>Submit specific files from Stage to Repository</p>
+<blockquote class="blockquote">
+<p>git commit [file1] [file2] … -m [message]</p>
+</blockquote>
+<p>Directly submit all changes after previous submission from Workspace to Repository</p>
+<blockquote class="blockquote">
+<p>git commit -a</p>
+</blockquote>
+<p>Display the difference info when submitting the code</p>
+<blockquote class="blockquote">
+<p>git commit -v</p>
+</blockquote>
+<p>If you want to change the commit message, you can use this code: (use only when no modification after previous commit):</p>
+<blockquote class="blockquote">
+<p>git commit –amend -m [message]</p>
+</blockquote>
+<p>Re-commit last code, including the new changes of certain files.</p>
+<blockquote class="blockquote">
+<p>git commit –amend [file1] [file2]</p>
+</blockquote>
 </section>
 <section id="branch" class="level2">
 <h2 class="anchored" data-anchor-id="branch">branch</h2>
-<p>list all local branches &gt; git branch</p>
-<p>list all remote branches &gt; gti branch -r</p>
-<p>list all local and remote brances &gt; git branch -a</p>
-<p>Create a new branch (local) &gt; git branch [branch-name]</p>
-<p>Create a new branch (local), and switch to this branch &gt; git checkout -b [branch-name]</p>
-<p>Create a new branch and direct to certain commit &gt; git branch [branch-name] [commit]</p>
-<p>Create a new branch and add track with remote branch &gt; git branch –track <a href="#branch">branch</a> [remote-branch]</p>
-<p>Switch to specific branch and update workspace &gt; git checkout [branch-name]</p>
-<p>Switch to last branch &gt; git checkout -</p>
-<p>Build track connection between current branch and remote branch &gt; git branch –set-upstream <a href="#branch">branch</a> [remote-branch]</p>
-<p>Merge specific branch to current branch &gt; git merge <a href="#branch">branch</a></p>
-<p>Choose a commit and merge to current branch &gt; git cherry-pick [commit]</p>
-<p>Delete a branch &gt; git branch -d [branch-name]</p>
-<p>Delete a remote branch &gt; git push origin –delete [branch-name] &gt; git branch -dr [remote/branch]</p>
+<p>list all local branches</p>
+<blockquote class="blockquote">
+<p>git branch</p>
+</blockquote>
+<p>list all remote branches</p>
+<blockquote class="blockquote">
+<p>gti branch -r</p>
+</blockquote>
+<p>list all local and remote brances</p>
+<blockquote class="blockquote">
+<p>git branch -a</p>
+</blockquote>
+<p>Create a new branch (local)</p>
+<blockquote class="blockquote">
+<p>git branch [branch-name]</p>
+</blockquote>
+<p>Create a new branch (local), and switch to this branch</p>
+<blockquote class="blockquote">
+<p>git checkout -b [branch-name]</p>
+</blockquote>
+<p>Create a new branch and direct to certain commit</p>
+<blockquote class="blockquote">
+<p>git branch [branch-name] [commit]</p>
+</blockquote>
+<p>Create a new branch and add track with remote branch</p>
+<blockquote class="blockquote">
+<p>git branch –track <a href="#branch">branch</a> [remote-branch]</p>
+</blockquote>
+<p>Switch to specific branch and update workspace</p>
+<blockquote class="blockquote">
+<p>git checkout [branch-name]</p>
+</blockquote>
+<p>Switch to last branch</p>
+<blockquote class="blockquote">
+<p>git checkout -</p>
+</blockquote>
+<p>Build track connection between current branch and remote branch</p>
+<blockquote class="blockquote">
+<p>git branch –set-upstream <a href="#branch">branch</a> [remote-branch]</p>
+</blockquote>
+<p>Merge specific branch to current branch</p>
+<blockquote class="blockquote">
+<p>git merge <a href="#branch">branch</a></p>
+</blockquote>
+<p>Choose a commit and merge to current branch</p>
+<blockquote class="blockquote">
+<p>git cherry-pick [commit]</p>
+</blockquote>
+<p>Delete a branch</p>
+<blockquote class="blockquote">
+<p>git branch -d [branch-name]</p>
+</blockquote>
+<p>Delete a remote branch</p>
+<blockquote class="blockquote">
+<p>git push origin –delete [branch-name]</p>
+<p>git branch -dr [remote/branch]</p>
+</blockquote>
 </section>
 <section id="tags" class="level2">
 <h2 class="anchored" data-anchor-id="tags">tags</h2>
-<p>List all tags &gt; git tag</p>
-<p>Create a tage for current commit &gt; git tag [tag]</p>
-<p>Create a tag for specific commit &gt; git tag [tag] [commit]</p>
-<p>Delete local tag &gt; git tag -d [tag]</p>
-<p>Delete remote tag &gt; git push origin :refs/tags/[tagName]</p>
-<p>Show tag infos &gt; git show [tag]</p>
-<p>Submit a specfic tag &gt; git push [remote] [tag]</p>
-<p>Submit all tags &gt; git push [remote] –tags</p>
-<p>Create a branch and direct to a specific tag &gt; git checkout -b <a href="#branch">branch</a> [tag]</p>
+<p>List all tags</p>
+<blockquote class="blockquote">
+<p>git tag</p>
+</blockquote>
+<p>Create a tage for current commit</p>
+<blockquote class="blockquote">
+<p>git tag [tag]</p>
+</blockquote>
+<p>Create a tag for specific commit</p>
+<blockquote class="blockquote">
+<p>git tag [tag] [commit]</p>
+</blockquote>
+<p>Delete local tag</p>
+<blockquote class="blockquote">
+<p>git tag -d [tag]</p>
+</blockquote>
+<p>Delete remote tag</p>
+<blockquote class="blockquote">
+<p>git push origin :refs/tags/[tagName]</p>
+</blockquote>
+<p>Show tag infos</p>
+<blockquote class="blockquote">
+<p>git show [tag]</p>
+</blockquote>
+<p>Submit a specfic tag</p>
+<blockquote class="blockquote">
+<p>git push [remote] [tag]</p>
+</blockquote>
+<p>Submit all tags</p>
+<blockquote class="blockquote">
+<p>git push [remote] –tags</p>
+</blockquote>
+<p>Create a branch and direct to a specific tag</p>
+<blockquote class="blockquote">
+<p>git checkout -b <a href="#branch">branch</a> [tag]</p>
+</blockquote>
 </section>
 <section id="visualize-difference" class="level2">
 <h2 class="anchored" data-anchor-id="visualize-difference">visualize difference</h2>
-<p>Display changed files &gt; git status</p>
-<p>Display the history version of current branch &gt; git log</p>
-<p>Display history of commits and changed files in every commit &gt; git log –stat</p>
-<p>Search commit history by keywords &gt; git log -S [keyword]</p>
-<p>Display all changes afer a commit, and format displays as one commit per row. &gt; git log [tag] HEAD –pretty=format:%s</p>
+<p>Display changed files</p>
+<blockquote class="blockquote">
+<p>git status</p>
+</blockquote>
+<p>Display the history version of current branch</p>
+<blockquote class="blockquote">
+<p>git log</p>
+</blockquote>
+<p>Display history of commits and changed files in every commit</p>
+<blockquote class="blockquote">
+<p>git log –stat</p>
+</blockquote>
+<p>Search commit history by keywords</p>
+<blockquote class="blockquote">
+<p>git log -S [keyword]</p>
+</blockquote>
+<p>Display all changes afer a commit, and format displays as one commit per row.</p>
+<blockquote class="blockquote">
+<p>git log [tag] HEAD –pretty=format:%s</p>
+</blockquote>
 <!-- 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件 -->
-<p>Display all changes of a specific commit, of whose commit message fits seach words. &gt; git log [tag] HEAD –grep feature</p>
-<p>Display the version history of a file. &gt; git log –follow [file] &gt; git whatchanged [file]</p>
-<p>Display all differences of a file in every commit. &gt; git log -p [file]</p>
-<p>Show last 5 commits info. &gt; git log -5 –pretty –oneline</p>
-<p>Show users who add commits, ordered in frequency. &gt; git shortlog -sn</p>
-<p>Show who and when changed a file. &gt; git blame [file]</p>
-<p>Show the difference between workspace and stage. &gt; git diff</p>
-<p>Show the difference between stage and last commit. &gt; git diff –cached [file]</p>
-<p>Show the diffrence between workspace and the newest commit in current branch &gt; git diff HEAD</p>
-<p>Show the difference between two commits &gt; git diff [first-branch]…[second-branch]</p>
-<p>Show how many codes do you write today. &gt; git diff –shortstat “@{0 day ago}”</p>
-<p>Show changes of a specific commit &gt; git show [commit]</p>
-<p>Show file changes of a specific commit &gt; git show –name-only [commit]</p>
-<p>git show filename of a commit &gt; git show [commit]:[filename]</p>
-<p>Show recent commits of current branch &gt; git reflog</p>
+<p>Display all changes of a specific commit, of whose commit message fits seach words.</p>
+<blockquote class="blockquote">
+<p>git log [tag] HEAD –grep feature</p>
+</blockquote>
+<p>Display the version history of a file.</p>
+<blockquote class="blockquote">
+<p>git log –follow [file]</p>
+<p>git whatchanged [file]</p>
+</blockquote>
+<p>Display all differences of a file in every commit.</p>
+<blockquote class="blockquote">
+<p>git log -p [file]</p>
+</blockquote>
+<p>Show last 5 commits info.</p>
+<blockquote class="blockquote">
+<p>git log -5 –pretty –oneline</p>
+</blockquote>
+<p>Show users who add commits, ordered in frequency.</p>
+<blockquote class="blockquote">
+<p>git shortlog -sn</p>
+</blockquote>
+<p>Show who and when changed a file.</p>
+<blockquote class="blockquote">
+<p>git blame [file]</p>
+</blockquote>
+<p>Show the difference between workspace and stage.</p>
+<blockquote class="blockquote">
+<p>git diff</p>
+</blockquote>
+<p>Show the difference between stage and last commit.</p>
+<blockquote class="blockquote">
+<p>git diff –cached [file]</p>
+</blockquote>
+<p>Show the diffrence between workspace and the newest commit in current branch</p>
+<blockquote class="blockquote">
+<p>git diff HEAD</p>
+</blockquote>
+<p>Show the difference between two commits</p>
+<blockquote class="blockquote">
+<p>git diff [first-branch]…[second-branch]</p>
+</blockquote>
+<p>Show how many codes do you write today.</p>
+<blockquote class="blockquote">
+<p>git diff –shortstat “@{0 day ago}”</p>
+</blockquote>
+<p>Show changes of a specific commit</p>
+<blockquote class="blockquote">
+<p>git show [commit]</p>
+</blockquote>
+<p>Show file changes of a specific commit</p>
+<blockquote class="blockquote">
+<p>git show –name-only [commit]</p>
+</blockquote>
+<p>git show filename of a commit</p>
+<blockquote class="blockquote">
+<p>git show [commit]:[filename]</p>
+</blockquote>
+<p>Show recent commits of current branch</p>
+<blockquote class="blockquote">
+<p>git reflog</p>
+</blockquote>
 </section>
 <section id="remote-sync" class="level2">
 <h2 class="anchored" data-anchor-id="remote-sync">remote sync</h2>
-<p>Download all changes from remote repository &gt; git fetch [remote]</p>
-<p>Display all remote repository &gt; git remote -v</p>
-<p>Display infomation of a remote repository &gt; git remote show [remote]</p>
-<p>Add a new remote repository and a name for the repository &gt; git remote add [shortname] [url]</p>
-<p>Pull the changes of the remote repository and merge it with local repository &gt; git pull [remote] <a href="#branch">branch</a></p>
-<p>Upload local branch of the repository to remote repository &gt; git push [remote] <a href="#branch">branch</a></p>
-<p>Force upload this current branch to remote repository ignoring conflicts. &gt; git push [remote] –force</p>
-<p>Push all branches to remote repository &gt; git push [remote] –all</p>
+<p>Download all changes from remote repository</p>
+<blockquote class="blockquote">
+<p>git fetch [remote]</p>
+</blockquote>
+<p>Display all remote repository</p>
+<blockquote class="blockquote">
+<p>git remote -v</p>
+</blockquote>
+<p>Display infomation of a remote repository</p>
+<blockquote class="blockquote">
+<p>git remote show [remote]</p>
+</blockquote>
+<p>Add a new remote repository and a name for the repository</p>
+<blockquote class="blockquote">
+<p>git remote add [shortname] [url]</p>
+</blockquote>
+<p>Pull the changes of the remote repository and merge it with local repository</p>
+<blockquote class="blockquote">
+<p>git pull [remote] <a href="#branch">branch</a></p>
+</blockquote>
+<p>Upload local branch of the repository to remote repository</p>
+<blockquote class="blockquote">
+<p>git push [remote] <a href="#branch">branch</a></p>
+</blockquote>
+<p>Force upload this current branch to remote repository ignoring conflicts.</p>
+<blockquote class="blockquote">
+<p>git push [remote] –force</p>
+</blockquote>
+<p>Push all branches to remote repository</p>
+<blockquote class="blockquote">
+<p>git push [remote] –all</p>
+</blockquote>
 </section>
 <section id="restoration" class="level2">
 <h2 class="anchored" data-anchor-id="restoration">restoration</h2>
-<p>Restore file from Stage area to Workspace &gt; git checkout [file]</p>
-<p>Restore a file in a commit from Stage area to workspace &gt; git checkout [commit] [file]</p>
-<p>Restore all files from Stage area to Workspace &gt; git checkout .</p>
-<p>Restore a file from Stage and keep the file the same as last commit, but file in Workspace is unchanged &gt; git reset [file]</p>
-<p>Reset Stage area and Workspace to keep the same as last commit. &gt; git reset –hard</p>
+<p>Restore file from Stage area to Workspace</p>
+<blockquote class="blockquote">
+<p>git checkout [file]</p>
+</blockquote>
+<p>Restore a file in a commit from Stage area to workspace</p>
+<blockquote class="blockquote">
+<p>git checkout [commit] [file]</p>
+</blockquote>
+<p>Restore all files from Stage area to Workspace</p>
+<blockquote class="blockquote">
+<p>git checkout .</p>
+</blockquote>
+<p>Restore a file from Stage and keep the file the same as last commit, but file in Workspace is unchanged</p>
+<blockquote class="blockquote">
+<p>git reset [file]</p>
+</blockquote>
+<p>Reset Stage area and Workspace to keep the same as last commit.</p>
+<blockquote class="blockquote">
+<p>git reset –hard</p>
+</blockquote>
 <!-- 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变 -->
-<p>Reset a commit of current branch, also reset the Stage area but change nothing in Workspace &gt; git reset [commit]</p>
+<p>Reset a commit of current branch, also reset the Stage area but change nothing in Workspace</p>
+<blockquote class="blockquote">
+<p>git reset [commit]</p>
+</blockquote>
 <!-- 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致 -->
-<p>Reset the HEAD of current branch as a specific commit, also reset stage and workspace to keep the same as the commit. &gt; git reset –hard [commit]</p>
+<p>Reset the HEAD of current branch as a specific commit, also reset stage and workspace to keep the same as the commit.</p>
+<blockquote class="blockquote">
+<p>git reset –hard [commit]</p>
+</blockquote>
 <!-- 重置当前HEAD为指定commit，但保持暂存区和工作区不变 -->
-<p>Rest current HEAD as a specific commit, but keep no changes in stage and workspace. &gt; git reset –keep [commit]</p>
+<p>Rest current HEAD as a specific commit, but keep no changes in stage and workspace.</p>
+<blockquote class="blockquote">
+<p>git reset –keep [commit]</p>
+</blockquote>
 <!-- 新建一个commit，用来撤销指定commit,后者的所有变化都将被前者抵消，并且应用到当前分支 -->
-<p>Create a new commit, which is used to restore another commit. The changes of the later commit will be restored by the former one and will be applied to current branch. &gt; git revert [commit]</p>
+<p>Create a new commit, which is used to restore another commit. The changes of the later commit will be restored by the former one and will be applied to current branch.</p>
+<blockquote class="blockquote">
+<p>git revert [commit]</p>
+</blockquote>
 <!-- 暂时将未提交的变化移除，稍后再移入 -->
-<p>Temporally remove current uncommited changes and add them later &gt; git stash &gt; git stash pop</p>
+<p>Temporally remove current uncommited changes and add them later</p>
+<blockquote class="blockquote">
+<p>git stash</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>git stash pop</p>
+</blockquote>
 </section>
 <section id="others" class="level2">
 <h2 class="anchored" data-anchor-id="others">Others</h2>
-<p>Create an archive file of a Git repository &gt; git archive</p>
+<p>Create an archive file of a Git repository</p>
+<blockquote class="blockquote">
+<p>git archive</p>
+</blockquote>
 <p><the end=""></the></p>
 <!-- some of the code comes to this reference: [A blog post](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html) -->
 

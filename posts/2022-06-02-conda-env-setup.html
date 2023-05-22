@@ -91,6 +91,11 @@ ul.task-list li input[type="checkbox"] {
 </i> 
  <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -179,17 +184,32 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="conda-enter-into-or-leave-a-specific-environment" class="level3">
 <h3 class="anchored" data-anchor-id="conda-enter-into-or-leave-a-specific-environment">conda enter into or leave a specific environment</h3>
-<p>Enter: &gt; conda activate your_env_name</p>
-<p>Exit: &gt; source deactivate</p>
-<p>or &gt; conda deactivate</p>
+<p>Enter:</p>
+<blockquote class="blockquote">
+<p>conda activate your_env_name</p>
+</blockquote>
+<p>Exit:</p>
+<blockquote class="blockquote">
+<p>source deactivate</p>
+</blockquote>
+<p>or</p>
+<blockquote class="blockquote">
+<p>conda deactivate</p>
+</blockquote>
 </section>
 <section id="about-packages-in-the-environment" class="level3">
 <h3 class="anchored" data-anchor-id="about-packages-in-the-environment">about packages in the environment</h3>
-<p>To check all available packages: &gt; conda list</p>
+<p>To check all available packages:</p>
+<blockquote class="blockquote">
+<p>conda list</p>
+</blockquote>
 <blockquote class="blockquote">
 <p>conda list -n your_env_name</p>
 </blockquote>
-<p>To check one package (e.g.&nbsp;rdkit) in your conda list &gt; conda list | grep rdkit</p>
+<p>To check one package (e.g.&nbsp;rdkit) in your conda list</p>
+<blockquote class="blockquote">
+<p>conda list | grep rdkit</p>
+</blockquote>
 </section>
 <section id="export-environment-as-yml" class="level3">
 <h3 class="anchored" data-anchor-id="export-environment-as-yml">export environment as yml</h3>
@@ -203,7 +223,10 @@ ul.task-list li input[type="checkbox"] {
 <p>conda env create -f environment.yml</p>
 </blockquote>
 <!-- 对yml文件修改后更新环境 -->
-<p>update conda environment after making edits on yml file: &gt; conda env update -f environment.yml</p>
+<p>update conda environment after making edits on yml file:</p>
+<blockquote class="blockquote">
+<p>conda env update -f environment.yml</p>
+</blockquote>
 </section>
 <section id="clone-an-environment" class="level3">
 <h3 class="anchored" data-anchor-id="clone-an-environment">clone an environment</h3>
@@ -219,15 +242,26 @@ ul.task-list li input[type="checkbox"] {
 <p>conda remove -n your_env_name –all</p>
 </blockquote>
 <!-- 删除虚拟环境中的包： -->
-<p>conda remove a package from a environment &gt; conda remove –name $your_env_name $package_name</p>
+<p>conda remove a package from a environment</p>
+<blockquote class="blockquote">
+<p>conda remove –name $your_env_name $package_name</p>
+</blockquote>
 </section>
 <section id="change-download-source-of-conda" class="level3">
 <h3 class="anchored" data-anchor-id="change-download-source-of-conda">change download source of conda</h3>
 <!-- 更改镜像源 -->
 <ol type="1">
-<li><p>check download resources &gt; conda config –set show_channel_urls yes</p></li>
-<li><p>add download sources to conda config &gt; conda config –add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</p></li>
+<li>check download resources</li>
 </ol>
+<blockquote class="blockquote">
+<p>conda config –set show_channel_urls yes</p>
+</blockquote>
+<ol start="2" type="1">
+<li>add download sources to conda config</li>
+</ol>
+<blockquote class="blockquote">
+<p>conda config –add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</p>
+</blockquote>
 <p>Also you will see the infomation in file ~/.condarc <!-- 修改后可以在~/.condarc配置文件中可以看到相应信息 --></p>
 <p>pip download sources are changed by looking at the file: ~/.pip/pip.conf <!-- pip修改镜像源（修改~/.pip/pip.conf配置文件） --></p>
 
