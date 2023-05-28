@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yliu566.github.io/blog_posts/posts/2023-05-24-nice-blog-to-read.html</loc>
+    <lastmod>2023-05-28T06:13:37.514Z</lastmod>
+  </url>
+  <url>
     <loc>https://yliu566.github.io/blog_posts/posts/welcome/index.html</loc>
-    <lastmod>2023-05-22T10:24:21.201Z</lastmod>
+    <lastmod>2023-05-28T06:13:37.854Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/posts/2022-06-01-git-cheatsheet.html</loc>
-    <lastmod>2023-05-22T10:24:21.785Z</lastmod>
+    <lastmod>2023-05-28T06:13:38.430Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/posts/2022-06-02-conda-env-setup.html</loc>
-    <lastmod>2023-05-22T10:24:22.141Z</lastmod>
+    <lastmod>2023-05-28T06:13:38.786Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/index.html</loc>
-    <lastmod>2023-05-22T10:24:22.657Z</lastmod>
+    <lastmod>2023-05-28T06:13:39.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/draft/2023-05-28-rdkit-draw-tools/index.html</loc>
+    <lastmod>2023-05-28T06:13:39.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yliu566.github.io/blog_posts/draft/example.html</loc>
+    <lastmod>2023-05-28T06:13:40.178Z</lastmod>
   </url>
   <url>
     <loc>https://yliu566.github.io/blog_posts/about.html</loc>
-    <lastmod>2023-05-22T10:24:22.945Z</lastmod>
+    <lastmod>2023-05-28T06:13:40.498Z</lastmod>
   </url>
 </urlset>

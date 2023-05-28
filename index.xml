@@ -10,7 +10,36 @@
 <atom:link href="https://yliu566.github.io/blog_posts/index.xml" rel="self" type="application/rss+xml"/>
 <description>A great sample blog</description>
 <generator>quarto-1.3.353</generator>
-<lastBuildDate>Fri, 19 May 2023 16:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 23 May 2023 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>Blog posts in the field of cheminformatics</title>
+  <link>https://yliu566.github.io/blog_posts/posts/2023-05-24-nice-blog-to-read.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Here are some blogposts with topics in cheminformatics which I enjoyed reading a lot. There for sure are more. I will update the list whenever I find one that is related.</p>
+<ul>
+<li><p><a href="http://www.drugdiscovery.net/">AI in Drug Discovery</a> by Andreas Bender. Andreas Bender is professor who collects news in the cheminformatics community and distributs the news as in a monthly blogpost.</p></li>
+<li><p><a href="https://greglandrum.github.io/rdkit-blog/">The RDKit Blog</a> by Greg Landrum. Before his migration to github, he wrote blogs on blogspot platform. The blog site is <a href="https://rdkit.blogspot.com/">here</a>.</p></li>
+<li><p><a href="https://practicalcheminformatics.blogspot.com/">Practical Cheminformatics</a> by Pat Walters. There also four posts <a href="https://patwalters.github.io/practicalcheminformatics/">here</a>.</p></li>
+<li><p><a href="https://iwatobipen.wordpress.com/">Is life worth living?</a> by iwatobipen. There is also a <a href="https://iwatobipen.github.io/is_life_worth_living-/">blogsite</a> on the Github platform, but I guess he doesn’t use it a lot.</p></li>
+<li><p><a href="https://pgg1610.github.io/blog_fastpages/">PGG’s blog</a> by Pushkar G. Ghanekar.</p></li>
+<li><p><a href="https://baoilleach.blogspot.com/">Noel O’Blog</a> by Noel O’Boyle</p></li>
+<li><p><a href="https://www.cheminformania.com/">Cheminformania</a> by Esben Jannik Bjerrum.</p></li>
+<li><p><a href="https://chem-bla-ics.blogspot.com/">Chem-bla-ics</a> by Egon Willighagen</p></li>
+<li><p><a href="https://depth-first.com/">Depth-First</a> by Richard L. Apodaca.</p></li>
+<li><p><a href="https://blog.reverielabs.com/">Reverie Labs’ blog</a> by people in Reverie Labs.</p></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>resources</category>
+  <guid>https://yliu566.github.io/blog_posts/posts/2023-05-24-nice-blog-to-read.html</guid>
+  <pubDate>Tue, 23 May 2023 16:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Welcome To My Blog</title>
   <link>https://yliu566.github.io/blog_posts/posts/welcome/index.html</link>
@@ -32,7 +61,7 @@
   <pubDate>Fri, 19 May 2023 16:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Use anaconda to setup an environment</title>
+  <title>Conda cheatsheet</title>
   <link>https://yliu566.github.io/blog_posts/posts/2022-06-02-conda-env-setup.html</link>
   <description><![CDATA[ 
 

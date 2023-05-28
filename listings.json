@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2023-05-24-nice-blog-to-read.html",
       "/posts/welcome/index.html",
       "/posts/2022-06-02-conda-env-setup.html",
       "/posts/2022-06-01-git-cheatsheet.html"
